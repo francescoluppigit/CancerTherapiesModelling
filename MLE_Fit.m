@@ -17,9 +17,9 @@ data_folder20 = 'Dati2\measles'; data_folder21 = 'Dati2\vaccinia';
 
 data_folder22 = 'Dati3\cyclic'; data_folder23 = 'Dati3\neutropenia';
 
-% Active settings
-data_folder = data_folder7;
-t_start = 5;
+
+data_folder = data_folder15;
+t_start = 0;
 
 qq_flag = false;
 metric_selection = 'AICc'; % Options: 'AIC', 'AICc', 'RMSE', 'RSE', 'MAPE'
@@ -52,8 +52,10 @@ model_list2 = {'LogisticLogN', 'GompertzLogN', 'RichardsLogN'};
 model_list3 = {'Logistic', 'LogisticLogN'};
 model_list4 = {'Gompertz', 'GompertzLogN'};
 model_list5 = {'Richards', 'RichardsLogN'};
+model_list6 = {'Logistic', 'Gompertz', 'Richards',...
+    'LogisticLogN', 'GompertzLogN', 'RichardsLogN'};
 
-model_list = model_list0;
+model_list = model_list1;
 
 M = length(model_list); 
 
